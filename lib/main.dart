@@ -5,6 +5,7 @@ import 'package:metapi_flutter_ui_project/screens/doctors_grid_demo_screen.dart'
 import 'package:metapi_flutter_ui_project/screens/doctors_list_screen.dart';
 import 'package:metapi_flutter_ui_project/screens/dynamic_listview_demo_screen.dart';
 import 'package:metapi_flutter_ui_project/screens/gridview_demo_screen.dart';
+import 'package:metapi_flutter_ui_project/screens/home_screen.dart';
 import 'package:metapi_flutter_ui_project/screens/image_demo_screen.dart';
 import 'package:metapi_flutter_ui_project/screens/listview_demo_screen.dart';
 import 'package:metapi_flutter_ui_project/screens/stack_demo_screen.dart';
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
 
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: DoctorsGridDemoScreen(),
+      home: HomeScreen(),
     );
   }
 }
