@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:metapi_flutter_ui_project/screens/button_demo_screen.dart';
 import 'package:metapi_flutter_ui_project/screens/column_demo_screen.dart';
 import 'package:metapi_flutter_ui_project/screens/container_demo_screen.dart';
+import 'package:metapi_flutter_ui_project/screens/counter_demo_screen.dart';
 import 'package:metapi_flutter_ui_project/screens/doctors_list_screen.dart';
 import 'package:metapi_flutter_ui_project/screens/stf_demo_one_screen.dart';
 
@@ -114,6 +115,26 @@ class HomeScreen extends StatelessWidget {
 
                 Navigator.of(context).push(MaterialPageRoute(builder: (context){
                   return StfDemoOneScreen();
+                }));
+
+              },
+            ),
+          ),
+
+
+          Card(
+            color: Colors.amber[100],
+            child: ListTile(
+              leading: CircleAvatar(
+                child: Text('6'),
+              ),
+
+              title: Text('Counter Screen'),
+              trailing: Icon(Icons.arrow_forward_ios_rounded, size: 16,),
+              onTap: (){
+
+                Navigator.of(context).push(MaterialPageRoute(builder: (context){
+                  return CounterDemoScreen();
                 }));
 
               },
