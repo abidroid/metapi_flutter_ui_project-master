@@ -23,3 +23,10 @@ List<Doctor> doctorsList = [
 ];
 
 
+List<String> quotesList = [
+  'All is well that ends well',
+  'No pains No gains',
+  'As you sow, so shall you reap',
+  'The more you sweat in peace, the less you bleed in war',
+  'Always move forward, even if you fall you will cover 6 feets of your height',
+];
