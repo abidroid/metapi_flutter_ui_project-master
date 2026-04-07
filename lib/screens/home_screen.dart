@@ -5,6 +5,7 @@ import 'package:metapi_flutter_ui_project/screens/column_demo_screen.dart';
 import 'package:metapi_flutter_ui_project/screens/container_demo_screen.dart';
 import 'package:metapi_flutter_ui_project/screens/counter_demo_screen.dart';
 import 'package:metapi_flutter_ui_project/screens/doctors_list_screen.dart';
+import 'package:metapi_flutter_ui_project/screens/input_demo_screen.dart';
 import 'package:metapi_flutter_ui_project/screens/quotes_screen.dart';
 import 'package:metapi_flutter_ui_project/screens/stf_demo_one_screen.dart';
 
@@ -156,6 +157,25 @@ class HomeScreen extends StatelessWidget {
 
                 Navigator.of(context).push(MaterialPageRoute(builder: (context){
                   return QuotesScreen();
+                }));
+
+              },
+            ),
+          ),
+
+          Card(
+            color: Colors.amber[100],
+            child: ListTile(
+              leading: CircleAvatar(
+                child: Text('8'),
+              ),
+
+              title: Text('Text Input Demo'),
+              trailing: Icon(Icons.arrow_forward_ios_rounded, size: 16,),
+              onTap: (){
+
+                Navigator.of(context).push(MaterialPageRoute(builder: (context){
+                  return InputDemoScreen();
                 }));
 
               },

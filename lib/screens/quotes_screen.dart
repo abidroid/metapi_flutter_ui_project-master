@@ -37,6 +37,7 @@ class _QuotesScreenState extends State<QuotesScreen> {
               )),
             ),
             ElevatedButton(onPressed: (){
+
               setState(() {
 
                 if( index == 4) {
