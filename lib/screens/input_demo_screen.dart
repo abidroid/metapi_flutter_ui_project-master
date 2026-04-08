@@ -16,7 +16,6 @@ class _InputDemoScreenState extends State<InputDemoScreen> {
         backgroundColor: Colors.green,
         title: Text('Input Demo'),
       ),
-
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -52,7 +51,6 @@ class _InputDemoScreenState extends State<InputDemoScreen> {
                 suffixIcon: Icon(Icons.visibility),
               ),
             ),
-
           ],
         ),
       ),
