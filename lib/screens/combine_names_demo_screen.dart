@@ -1,5 +1,7 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class CombineNamesDemoScreen extends StatefulWidget {
   const CombineNamesDemoScreen({super.key});
@@ -65,8 +67,23 @@ class _CombineNamesDemoScreenState extends State<CombineNamesDemoScreen> {
                 Expanded(child: ElevatedButton(onPressed: (){
 
                   String firstName = firstController.text.trim();
-
                   String lastName = lastController.text.trim();
+
+                  if( firstName.isEmpty){
+
+                    Fluttertoast.showToast(msg: 'Please provide first name',
+
+                      fontSize: 30,
+                      backgroundColor: Colors.green,
+                      gravity: ToastGravity.TOP
+                    );
+                    return;
+                  }
+
+                  if( lastName.isEmpty){
+                    Fluttertoast.showToast(msg: 'Please provide last name');
+                    return;
+                  }
 
                   setState(() {
                     fullName = '$firstName $lastName';
@@ -79,7 +96,8 @@ class _CombineNamesDemoScreenState extends State<CombineNamesDemoScreen> {
             SizedBox(height: 16,),
 
             Text(fullName),
-            
+
+            SpinKitDualRing(color: Colors.green),
           ],
         ),
       ),
